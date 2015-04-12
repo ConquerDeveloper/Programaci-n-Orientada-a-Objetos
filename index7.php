@@ -5,7 +5,7 @@
 </head>
 <body>
 	<?php
-	class Trabajador {
+	abstract class Trabajador {
 		protected $nombre;
 		protected $sueldo;
 		public function __construct($nom, $su) {
@@ -22,10 +22,17 @@
 	class Gerente extends Trabajador {
 		
 	}
-    $emp = new Empleado("Kevin Abreu", 39423894293864928364928364);
-	/*
-	$tra = new Trabajador("Kevin Abreu", 6500);
+    $emp = new Empleado("Kevin Abreu", 8000);
+    echo $emp->retornar_sueldo() . "<hr/>" ;
+    $ger = new Gerente("Culo", 324234234);
+    echo $ger->retornar_sueldo() . "<br/>";
+	/*$tra = new Trabajador("Kevin Abreu", 6500);
 	echo $tra->retornar_sueldo();*/
+    if ($emp instanceof Empleado) {
+        echo "Eres rolo e marico jijiji";
+    } else {
+        echo "Pertenece a otra clase";
+    }
 	?>
 </body>
 </html>
