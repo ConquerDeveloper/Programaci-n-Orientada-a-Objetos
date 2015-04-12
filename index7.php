@@ -22,6 +22,7 @@
 	class Gerente extends Trabajador {
 		
 	}
+    $emp = new Empleado("Kevin Abreu", 39423894293864928364928364);
 	/*
 	$tra = new Trabajador("Kevin Abreu", 6500);
 	echo $tra->retornar_sueldo();*/
